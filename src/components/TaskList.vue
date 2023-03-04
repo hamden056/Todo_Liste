@@ -18,8 +18,8 @@
           <td>{{ task.date }}</td>
           <td>{{ task.priority }}</td>
           <td>
-            <button class="btn btn-sm btn-primary" @click="edit()">Edit</button>
-            <button class="btn btn-sm btn-danger" @click="remove()">Delete</button>
+            <button class="btn btn-sm btn-primary">Edit</button>
+            <button class="btn btn-sm btn-danger">Delete</button>
           </td>
         </tr>
       </tbody>
@@ -33,17 +33,5 @@ export default {
   props: {
     tasks: Array
   },
-  methods: {
-    edit() {
-      // Implementieren der Bearbeiten-Funktion
-    },
-    remove() {
-      // Implementieren der Löschen-Funktion
-    }
-  }
 };
 </script>
-
-<style>
-/* Implementieren des Stylings der TaskList-Komponente */
-</style>
