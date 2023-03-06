@@ -29,5 +29,4 @@ export default {
 </script>
 
 <style>
-/* Implementieren des Stylings der TaskItem-Komponente */
 </style>

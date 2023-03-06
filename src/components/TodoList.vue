@@ -80,5 +80,4 @@ export default {
 </script>
 
 <style>
-/* Implementieren des Stylings der TodoList-Komponente */
 </style>

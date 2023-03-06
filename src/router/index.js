@@ -3,9 +3,8 @@ import TodoList from '@/components/TodoList'
 import TaskList from '@/components/TaskList'
 import TaskItem from '@/components/TaskItem'
 
-const router = createRouter({
-  history: createWebHistory(),
-  routes: [
+
+  const routes = [
     {
       path: '/',
       name: 'TodoList',
@@ -20,8 +19,13 @@ const router = createRouter({
       path: '/tasks/:id',
       name: 'TaskItem',
       component: TaskItem
-    }
+    } 
   ]
-})
+
+  const router = createRouter({
+    history: createWebHistory(process.env.BASE_URL),
+    routes
+  })
+ 
 
 export default router
